@@ -1,0 +1,15 @@
+Build.PL
+Changes
+lib/Pod/ToDocBook.pm
+lib/Pod/ToDocBook/DoSequences.pm
+lib/Pod/ToDocBook/Pod2xml.pm
+lib/Pod/ToDocBook/ProcessHeads.pm
+lib/Pod/ToDocBook/ProcessItems.pm
+Makefile.PL
+MANIFEST
+README
+t/01_Pod2xml.t
+t/03_itemslist.t
+t/04_heads.t
+t/05_formating.t
+META.yml
