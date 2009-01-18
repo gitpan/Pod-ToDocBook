@@ -1,6 +1,6 @@
 package Pod::ToDocBook::Pod2xml;
 
-#$Id: Pod2xml.pm 389 2009-01-17 14:17:31Z zag $
+#$Id: Pod2xml.pm 397 2009-01-18 14:21:47Z zag $
 
 =head1 NAME
 
@@ -97,6 +97,7 @@ sub end_input {
 =head2 parse_link Ltext
 
 types:
+
     pod
         L<text> 
         L<text::test>
