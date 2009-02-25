@@ -1,4 +1,4 @@
-#$Id: 01_Pod2xml.t 389 2009-01-17 14:17:31Z zag $
+#$Id: 01_Pod2xml.t 443 2009-02-08 14:51:33Z zag $
 
 =pod
 
@@ -110,7 +110,7 @@ my ( $t2, $c2 );
         },
     }
 );
-is $c2, 9, 'formats, para, verbatim: count';
+is $c2, 8, 'formats, para, verbatim: count';
 
 is_deeply $t2, [ 'begin', 1, 'begin', 1, 'verbatim', 1, 'para', 1 ],
   'formats, para, verbatim: struct';

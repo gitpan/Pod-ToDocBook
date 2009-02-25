@@ -1,6 +1,6 @@
 package Pod::ToDocBook::DoSequences;
 
-#$Id: DoSequences.pm 389 2009-01-17 14:17:31Z zag $
+#$Id: DoSequences.pm 436 2009-02-03 16:53:12Z zag $
 
 =head1 NAME
 
@@ -24,7 +24,6 @@ Pod::ToDocBook::DoSequences - Process Formatting Codes (a.k.a. "interior sequenc
 Pod::ToDocBook::DoSequences - Process Formatting Codes (a.k.a. "interior sequences")
 
 =cut
-
 
 use warnings;
 use strict;
@@ -197,6 +196,9 @@ sub on_end_element {
           ->add_content( $self->mk_characters( $el->{TITLE} ) );
     }
     elsif ( $code eq 'X' ) {
+        return $el->mk_element('indexterm')
+          ->add_content( $el->mk_element('primary')
+              ->add_content( $self->mk_characters( $el->{TITLE} ) ) );
         return $self->mk_from_xml(
             qq!<indexterm><primary>$el->{TITLE}</primary></indexterm>!)
 

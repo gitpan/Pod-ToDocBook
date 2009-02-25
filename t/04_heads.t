@@ -1,4 +1,4 @@
-#$Id: 04_heads.t 397 2009-01-18 14:21:47Z zag $
+#$Id: 04_heads.t 487 2009-02-25 19:35:37Z zag $
 
 =pod
 
@@ -79,4 +79,12 @@ is_deeply $t4, [
            'title',
            {}
          ],'section';
+my $xml2 = pod2xml( <<OUT1 );
+
+=head1 NAME
+
+test
+
+=cut
+OUT1
 
