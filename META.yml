@@ -1,6 +1,6 @@
 ---
 name: Pod-ToDocBook
-version: 0.5
+version: 0.6
 author:
   - Zahatski Aliaksandr zag@cpan.org
 abstract: Pluggable converter POD data to DocBook.
@@ -17,9 +17,11 @@ requires:
 provides:
   Pod::ToDocBook:
     file: lib/Pod/ToDocBook.pm
-    version: 0.5
+    version: 0.6
   Pod::ToDocBook::DoSequences:
     file: lib/Pod/ToDocBook/DoSequences.pm
+  Pod::ToDocBook::FormatList:
+    file: lib/Pod/ToDocBook/FormatList.pm
   Pod::ToDocBook::Pod2xml:
     file: lib/Pod/ToDocBook/Pod2xml.pm
   Pod::ToDocBook::ProcessHeads:

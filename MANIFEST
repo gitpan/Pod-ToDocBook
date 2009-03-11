@@ -2,6 +2,7 @@ Build.PL
 Changes
 lib/Pod/ToDocBook.pm
 lib/Pod/ToDocBook/DoSequences.pm
+lib/Pod/ToDocBook/FormatList.pm
 lib/Pod/ToDocBook/Pod2xml.pm
 lib/Pod/ToDocBook/ProcessHeads.pm
 lib/Pod/ToDocBook/ProcessItems.pm
@@ -15,4 +16,5 @@ t/04_heads.t
 t/05_formating.t
 t/06_default_table.t
 t/07_links.t
+t/08_format_list.t
 META.yml
