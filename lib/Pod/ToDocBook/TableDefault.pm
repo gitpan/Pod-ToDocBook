@@ -1,6 +1,6 @@
 package Pod::ToDocBook::TableDefault;
 
-#$Id: TableDefault.pm 516 2009-03-11 08:39:47Z zag $
+#$Id: TableDefault.pm 579 2009-07-25 16:23:26Z zag $
 
 =head1 NAME
 
@@ -158,7 +158,7 @@ sub process_format {
 sub on_end_element {
     my ( $self, $el ) = @_;
     my $lname = $el->local_name;
-    if ( $lname eq 'begin' ) {
+    if ( $lname eq 'begin' and exists $self->{PROCESS} ) {
         delete $self->{PROCESS};
         my $attr  = $el->attrs_by_name;
         my $cdata = $el->{CDATA};
