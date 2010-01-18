@@ -1,6 +1,6 @@
 package Pod::ToDocBook;
 
-#$Id: ToDocBook.pm 678 2009-12-04 14:22:57Z zag $
+#$Id: ToDocBook.pm 695 2010-01-18 17:48:33Z zag $
 
 =head1 NAME
 
@@ -79,7 +79,7 @@ use XML::SAX::Writer;
 require Exporter;
 *import                    = \&Exporter::import;
 @Pod::ToDocBook::EXPORT_OK = qw(create_parser);
-$Pod::ToDocBook::VERSION   = '0.8';
+$Pod::ToDocBook::VERSION   = '0.9';
 
 =head1 FUNCTIONS
 

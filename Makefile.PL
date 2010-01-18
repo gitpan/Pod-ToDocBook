@@ -9,7 +9,7 @@ WriteMakefile
                            'Encode' => 0,
                            'Pod::Parser' => '0',
                            'Text::ParseWords' => 0,
-                           'XML::ExtOn' => '0.11',
+                           'XML::ExtOn' => '0.12',
                            'XML::Flow' => '0',
                            'XML::SAX::Writer' => '0'
                          },

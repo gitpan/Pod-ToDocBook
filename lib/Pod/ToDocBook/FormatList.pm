@@ -1,6 +1,6 @@
 package Pod::ToDocBook::FormatList;
 
-#$Id: FormatList.pm 579 2009-07-25 16:23:26Z zag $
+#$Id: FormatList.pm 695 2010-01-18 17:48:33Z zag $
 
 =head1 NAME
 
@@ -130,7 +130,6 @@ sub process_format {
     return $over;
     #create POD2XML instance for parce pod sequences
     #    my $pod_parser = new Pod::ToDocBook::Pod2xml::;
-    #    warn "asdasdasd";
     return undef;
 }
 

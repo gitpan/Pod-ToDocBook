@@ -1,6 +1,6 @@
 package Pod::ToDocBook::Pod2xml;
 
-#$Id: Pod2xml.pm 443 2009-02-08 14:51:33Z zag $
+#$Id: Pod2xml.pm 695 2010-01-18 17:48:33Z zag $
 
 =head1 NAME
 
@@ -282,6 +282,8 @@ sub _current {
 sub _process {
     my $self = shift;
     my ($elem) = @_;
+#    warn "process ". $elem . "at " . $elem->local_name;
+#    warn (ref($elem) eq 'HASH') ?  $elem->{type} : $elem->local_name;
 
     #get element for current level
     if ( my $current = $self->_current ) {
